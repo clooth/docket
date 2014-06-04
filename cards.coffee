@@ -1863,10 +1863,11 @@
     mana_cost: 6
     attack: 4
     health: 5
-    effect_list: [
-      effect: "deathrattle"
-      extra: "Summon a 4/5 Baine Bloodhoof"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 421
@@ -1893,10 +1894,11 @@
     mana_cost: 6
     attack: 5
     health: 4
-    effect_list: [
-      effect: "battlecry"
-      extra: "Restore 4 Health to your hero"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 430
@@ -1908,6 +1910,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 4
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 435
@@ -1919,6 +1926,11 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 5
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 436
@@ -1933,10 +1945,11 @@
     mana_cost: 9
     attack: 4
     health: 12
-    effect_list: [
-      effect: "spell_damage"
-      extra: "+5"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 437
@@ -1948,6 +1961,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.BASIC
     mana_cost: 3
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 440
@@ -1961,15 +1979,12 @@
     mana_cost: 5
     attack: 4
     health: 4
-    effect_list: [
-      {
-        effect: "taunt"
-      }
-      {
-        effect: "deathrattle"
-        extra: "Deal 2 damage to ALL characters"
-      }
-    ]
+    taunt: true
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 443
@@ -1984,10 +1999,11 @@
     mana_cost: 1
     attack: 1
     health: 2
-    effect_list: [
-      effect: "battlecry"
-      extra: "Destroy a Murloc and gain +2/+2"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 445
@@ -2001,9 +2017,7 @@
     mana_cost: 6
     attack: 5
     health: 2
-    effect_list: [
-      effect: "charge"
-    ]
+    charge: true
   }
   {
     id: 447
@@ -2015,6 +2029,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 453
@@ -2029,10 +2048,11 @@
     mana_cost: 3
     attack: 2
     health: 3
-    effect_list: [
-      effect: "battlecry"
-      extra: "Give ALL other Murlocs +2 Health"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 455
@@ -2044,10 +2064,11 @@
     rarity: CardRarity.EPIC
     card_set: CardSet.EXPERT
     mana_cost: 2
-    effect_list: [
-      effect: "secret"
-      extra: "When one of your minions is attacked, summon three 1/1 Snakes"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 456
@@ -2062,10 +2083,11 @@
     mana_cost: 5
     attack: 5
     health: 4
-    effect_list: [
-      effect: "battlecry"
-      extra: "Give your weapon +1/+1"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 457
@@ -2077,6 +2099,11 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 6
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 459
@@ -2088,6 +2115,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 461
@@ -2099,6 +2131,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 462
@@ -2110,10 +2147,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 1
-    effect_list: [
-      effect: "secret"
-      extra: "When your hero takes damage, deal that much damage to the enemy hero"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 466
@@ -2127,15 +2165,12 @@
     mana_cost: 3
     attack: 4
     health: 2
-    effect_list: [
-      {
-        effect: "charge"
-      }
-      {
-        effect: "battlecry"
-        extra: "Give your opponent a Mana Crystal"
-      }
-    ]
+    charge: true
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 467
@@ -2146,6 +2181,11 @@
     type: CardType.SPELL
     rarity: CardRarity.COMMON
     card_set: CardSet.BASIC
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 469
@@ -2160,9 +2200,12 @@
     mana_cost: 1
     attack: 0
     health: 1
-    effect_list: [
-      effect: "stealth"
-    ]
+    stealth: true
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 475
@@ -2177,6 +2220,11 @@
     mana_cost: 1
     attack: 1
     health: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 476
@@ -2188,6 +2236,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.BASIC
     mana_cost: 4
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 481
@@ -2199,6 +2252,11 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 493
@@ -2210,6 +2268,11 @@
     rarity: CardRarity.EPIC
     card_set: CardSet.EXPERT
     mana_cost: 6
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 496
@@ -2223,10 +2286,11 @@
     mana_cost: 5
     attack: 4
     health: 4
-    effect_list: [
-      effect: "battlecry"
-      extra: "Gain +1/+1 for each other friendly minion on the battlefield"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 503
@@ -2238,6 +2302,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 505
@@ -2249,10 +2318,12 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 1
-    effect_list: [
-      effect: "overload"
-      extra: "(1)"
-    ]
+    overload: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 510
@@ -2267,6 +2338,11 @@
     mana_cost: 1
     attack: 1
     health: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 511
@@ -2278,6 +2354,11 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 512
@@ -2291,10 +2372,11 @@
     mana_cost: 6
     attack: 5
     health: 5
-    effect_list: [
-      effect: "battlecry"
-      extra: "Freeze a character"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 513
@@ -2307,8 +2389,12 @@
     subtype: CardSubType.totem
     card_set: CardSet.EXPERT
     mana_cost: 3
-    attack: null
     health: 3
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 517
@@ -2323,15 +2409,12 @@
     mana_cost: 3
     attack: 3
     health: 5
-    effect_list: [
-      {
-        effect: "taunt"
-      }
-      {
-        effect: "battlecry"
-        extra: "Destroy one of your Mana Crystals"
-      }
-    ]
+    taunt: true
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 519
@@ -2343,10 +2426,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 2
-    effect_list: [
-      effect: "secret"
-      extra: "When an enemy minion attacks, return it to its owner's hand and it costs (2) more"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 523
@@ -2360,10 +2444,11 @@
     mana_cost: 4
     attack: 2
     health: 4
-    effect_list: [
-      effect: "battlecry"
-      extra: "Summon a 2/1 Mechanical Dragonling"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 525
@@ -2377,10 +2462,11 @@
     mana_cost: 6
     attack: 4
     health: 7
-    effect_list: [
-      effect: "spell_damage"
-      extra: "+1"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 526
@@ -2394,6 +2480,11 @@
     mana_cost: 8
     attack: 7
     health: 7
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 530
@@ -2408,10 +2499,11 @@
     mana_cost: 2
     attack: 1
     health: 1
-    effect_list: [
-      effect: "battlecry"
-      extra: "Put a random Pirate from your deck into your hand"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 531
@@ -2425,10 +2517,11 @@
     mana_cost: 5
     attack: 3
     health: 3
-    effect_list: [
-      effect: "battlecry"
-      extra: "Choose a minion and become a copy of it"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 538
@@ -2442,10 +2535,11 @@
     mana_cost: 4
     attack: 3
     health: 3
-    effect_list: [
-      effect: "battlecry"
-      extra: "Equip a 2/2 weapon"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 545
@@ -2457,6 +2551,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 546
@@ -2468,6 +2567,11 @@
     rarity: CardRarity.EPIC
     card_set: CardSet.EXPERT
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 555
@@ -2479,6 +2583,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 3
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 556
@@ -2493,6 +2602,11 @@
     mana_cost: 6
     attack: 7
     health: 5
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 559
@@ -2506,15 +2620,12 @@
     mana_cost: 4
     attack: 6
     health: 2
-    effect_list: [
-      {
-        effect: "charge"
-      }
-      {
-        effect: "battlecry"
-        extra: "Summon two 1/1 Whelps for your opponent"
-      }
-    ]
+    charge: true
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 564
@@ -2526,6 +2637,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 567
@@ -2539,9 +2655,7 @@
     mana_cost: 6
     attack: 4
     health: 5
-    effect_list: [
-      effect: "windfury"
-    ]
+    windfury: true
   }
   {
     id: 570
@@ -2555,10 +2669,11 @@
     mana_cost: 3
     attack: 3
     health: 3
-    effect_list: [
-      effect: "battlecry"
-      extra: "Transform a minion into a 5/5 Devilsaur or a 1/1 Squirrel at random"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 573
@@ -2570,6 +2685,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.BASIC
     mana_cost: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 577
@@ -2581,6 +2701,11 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 4
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 581
@@ -2595,10 +2720,11 @@
     mana_cost: 9
     attack: 8
     health: 8
-    effect_list: [
-      effect: "battlecry"
-      extra: "Set a hero's remaining Health to 15"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 582
@@ -2612,10 +2738,11 @@
     mana_cost: 5
     attack: 4
     health: 5
-    effect_list: [
-      effect: "battlecry"
-      extra: "Restore 2 Health to all friendly characters"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 584
@@ -2627,10 +2754,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 1
-    effect_list: [
-      effect: "secret"
-      extra: "When an enemy attacks, summon a 2/1 Defender as the new target"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 585
@@ -2642,10 +2770,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 2
-    effect_list: [
-      effect: "secret"
-      extra: "When your hero is attacked, deal 2 damage to all enemies"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 587
@@ -2657,6 +2786,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.BASIC
     mana_cost: 3
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 592
@@ -2671,10 +2805,11 @@
     mana_cost: 2
     attack: 4
     health: 3
-    effect_list: [
-      effect: "battlecry"
-      extra: "Discard a random card"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 594
@@ -2686,6 +2821,11 @@
     rarity: CardRarity.EPIC
     card_set: CardSet.EXPERT
     mana_cost: 8
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 596
@@ -2699,6 +2839,11 @@
     mana_cost: 2
     attack: 1
     health: 4
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 601
@@ -2712,6 +2857,11 @@
     mana_cost: 4
     attack: 2
     health: 4
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 602
@@ -2725,9 +2875,7 @@
     mana_cost: 5
     attack: 3
     health: 6
-    effect_list: [
-      effect: "taunt"
-    ]
+    taunt: true
   }
   {
     id: 605
@@ -2741,6 +2889,7 @@
     mana_cost: 2
     attack: 4
     health: 5
+    defender: true
   }
   {
     id: 606
@@ -2755,6 +2904,11 @@
     mana_cost: 1
     attack: 1
     health: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 608
@@ -2768,10 +2922,11 @@
     mana_cost: 3
     attack: 3
     health: 2
-    effect_list: [
-      effect: "battlecry"
-      extra: "Give a friendly minion +1/+1"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 609
@@ -2786,6 +2941,7 @@
     mana_cost: 2
     attack: 3
     health: 2
+    shroud: true
   }
   {
     id: 613
@@ -2797,6 +2953,11 @@
     rarity: CardRarity.FREE
     card_set: CardSet.BASIC
     mana_cost: 1
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 614
@@ -2810,6 +2971,11 @@
     mana_cost: 2
     attack: 3
     health: 2
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 618
@@ -2823,15 +2989,8 @@
     mana_cost: 1
     attack: 3
     health: 1
-    effect_list: [
-      {
-        effect: "windfury"
-      }
-      {
-        effect: "overload"
-        extra: "(2)"
-      }
-    ]
+    windfury: true
+    overload: 2
   }
   {
     id: 621
@@ -2843,10 +3002,11 @@
     rarity: CardRarity.COMMON
     card_set: CardSet.EXPERT
     mana_cost: 3
-    effect_list: [
-      effect: "secret"
-      extra: "As soon as your hero is attacked, gain 8 Armor"
-    ]
+
+    triggers: {
+      'CAST': (card, game) ->
+        console.log "TODO: Implement effects"
+    }
   }
   {
     id: 622
@@ -2860,9 +3020,7 @@
     mana_cost: 4
     attack: 2
     health: 5
-    effect_list: [
-      effect: "charge"
-    ]
+    charge: true
   }
   {
     id: 629
@@ -2874,10 +3032,7 @@
     rarity: CardRarity.RARE
     card_set: CardSet.EXPERT
     mana_cost: 3
-    effect_list: [
-      effect: "overload"
-      extra: "(2)"
-    ]
+    overload: 2
   }
   {
     id: 630
